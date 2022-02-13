@@ -21,6 +21,6 @@ If so, I need to understand how they are expecting to use the solution:
 Do they need a report with the data filtered? or Do they need to run queries exceuting a stored procedure in their own db by passing custom values? 
 What type of queries do they need? How is the logic?
 
-about the three dimensiones mentioned: they would analyze them separately?
+about the three dimensions mentioned: they would analyze them separately?
 
 
