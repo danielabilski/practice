@@ -1,5 +1,4 @@
 USE db
-USE db
 
 CREATE PROCEDURE sp_fire_incidents @district nvarchar(200) = NULL, @batallion nvarchar(200) = NULL, @incident_date1 nvarchar(100) = NULL,
 @incident_date2 nvarchar(100) = NULL
