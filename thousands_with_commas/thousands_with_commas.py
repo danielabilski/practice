@@ -1,5 +1,5 @@
 import logging
-
+logging.basicConfig(level=logging.NOTSET)
 
 def thousands_with_commas(i: int) -> str:
 
