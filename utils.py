@@ -1,10 +1,10 @@
 from datetime import datetime
+import pandas as pd
 
-
-def percentage(col1, col2) -> float:
+def calculate_ctr(col1, col2) -> float:
 
     """
-    Function to calaculate specific rate between 2 values
+    Function to calaculate CTR
 
     Parameters
     ----------
@@ -17,6 +17,23 @@ def percentage(col1, col2) -> float:
 
     """
     return ((col1) / (col2) * 100)
+
+def calculate_cpi(col1, col2) -> float:
+
+    """
+    Function to calaculate CPI
+
+    Parameters
+    ----------
+    col1: float
+    col2: float
+
+    Returns
+    -------
+    float
+
+    """
+    return ((col1) / (col2))
     
 
 def iso_date(date) -> datetime:
@@ -35,8 +52,9 @@ def iso_date(date) -> datetime:
     """
 
     date = datetime.strptime(date, '%Y.%m.%d')
+    iso_date = datetime.isoformat(date)
     
-    return date.isoformat()
+    return datetime.fromisoformat(iso_date)
 
 
 def convert_to_int(column) -> int:
@@ -55,3 +73,21 @@ def convert_to_int(column) -> int:
     """
 
     return column.astype('int')
+
+def read_csv(file_name) -> pd.DataFrame:
+
+    """
+    Function to read csv
+
+    Parameters
+    ----------
+    column: str
+
+    Returns
+    -------
+    DataFrame
+
+    """
+    df = pd.read_csv(file_name)
+
+    return df
