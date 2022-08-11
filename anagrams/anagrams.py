@@ -18,7 +18,12 @@ def anagrams(word: str) -> str:
 
     anagrams = [alt for alt in words_list if sorted(word) == sorted(alt)]
 
-    return anagrams
+    if anagrams:
+        return anagrams
+
+    else:
+        return (f"No anagrams were found for {word}")
+
 
 if __name__ == "__main__":
     print(anagrams("train"))
