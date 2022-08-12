@@ -4,7 +4,7 @@ logging.basicConfig(level=logging.NOTSET)
 def thousands_with_commas(i: int) -> str:
 
     """
-    Function that gets an integer and
+    Function that takes an integer and
     returns a string with the number with commas every 3 digits.
 
     Parameters
