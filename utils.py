@@ -77,11 +77,11 @@ def convert_to_int(column) -> int:
 def read_csv(file_name) -> pd.DataFrame:
 
     """
-    Function to read csv
+    Function to read a csv file
 
     Parameters
     ----------
-    column: str
+    file_name: csv
 
     Returns
     -------
