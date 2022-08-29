@@ -1,3 +1,6 @@
+
+# script to solve the following challenge: https://codingcompetitions.withgoogle.com/codejam/round/0000000000201bee/0000000000201c8a
+
 import logging
 logging.basicConfig(level=logging.NOTSET)
 
